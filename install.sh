@@ -148,19 +148,6 @@ installPrograms() {
         sudo pacman -S awesome geany kitty picom rofi zsh
 
     fi
-    
-    #installing web greater
-    sudo apt install ~/awsomewm/web-greeter-3.5.2-debian.deb
-    
-    # lightdm config
-    sudo cp -r lightdm-evo-main /usr/share/lightdm-webkit/themes/lightdm-evo
-
-    # Set default lightdm-webkit2-greeter theme to Evo
-    sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = lightdm-evo #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
-
-    # Set default lightdm greeter to lightdm-webkit2-greeter
-    sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' /etc/lightdm/lightdm.conf
-    
 }
 
 
