@@ -149,6 +149,9 @@ installPrograms() {
 
     fi
     
+    #installing web greater
+    sudo apt install web-greeter-3.5.2-debian.deb
+    
     # lightdm config
     sudo cp -r lightdm-evo-main /usr/share/lightdm-webkit/themes/lightdm-evo
 
