@@ -140,7 +140,7 @@ installPrograms() {
 
     if [ "$distroResponse" == "2" ]
     then
-        sudo apt install awesome geany kitty picom rofi zsh lightdm lightdm-greeter
+        sudo apt install awesome geany kitty picom rofi zsh lightdm lightdm-gtk-greeter
     fi
 
     if [ "$distroResponse" == "3" ]
