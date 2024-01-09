@@ -149,6 +149,7 @@ installPrograms() {
 
     fi
 }
+echo insall more aps ?
 
 
 intro
