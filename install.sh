@@ -1,28 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-intro() {
-    echo
-    echo -e "Use the corresponding number to make a selection"
-    echo
-    echo -e "\e[91m{1}      \e[32mDownload + Install Programs"
-    echo -e "\e[91m{99}     \e[32mExit\e[0m"
-    echo
-    read -p "Selection: " menuResponse
-
-    if [ "$menuResponse" == "99" ]
-    then
-        exit 1
-    fi
-
-    if [ "$menuResponse" == "1" ]
-    then
-        installPrograms
-    fi
-}
-
-
-
 installPrograms() {
 
     clear;
