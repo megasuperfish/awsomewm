@@ -30,7 +30,7 @@ installPrograms() {
 
     if [ "$distroResponse" == "3" ]
     then
-        sudo pacman -S awesome geany kitty picom rofi zsh
+        sudo pacman -S awesome lightdm
 
     fi
 }
