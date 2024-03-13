@@ -20,12 +20,12 @@ installPrograms() {
 
     if [ "$distroResponse" == "1" ]
     then
-        sudo dnf install awesome geany kitty picom rofi zsh
+        sudo dnf install awesome 
     fi
 
     if [ "$distroResponse" == "2" ]
     then
-        sudo apt install awesome geany kitty picom rofi zsh lightdm lightdm-gtk-greeter -y
+        sudo apt install awesome lightdm -y
     fi
 
     if [ "$distroResponse" == "3" ]
